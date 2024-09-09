@@ -1,7 +1,8 @@
 {
 	"compilerOptions": {
 		"target": "es2016",
-		"module": "NodeNext",
+		"module": "ESNext",
+		"moduleResolution": "Node",
 		"baseUrl": ".",
 		"allowJs": true,
 		// "outDir": "./dist",
@@ -11,7 +12,7 @@
 		"strict": true,
 		"skipLibCheck": true,
 		"paths": {
-			"@components/*": ["src/js/components/*"]
+			"@lib/*": ["./src/js/lib/*"]
 		}
 	}
 }
