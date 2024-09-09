@@ -7,12 +7,12 @@ export class RobberLanguageConverter {
     this.#robberVowel = 'o'
   }
 
-  encrypt (text: string): string {
+  convertTo (text: string): string {
     let result = ''
 
     for (const char of text) {
       if (char.match(this.#consonants)) {
-        result += char + this.#robberVowel + char
+        result += char + this.#robberVowel + char.toLowerCase()
         continue
       }
       result+= char
