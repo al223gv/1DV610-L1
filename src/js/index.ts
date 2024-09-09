@@ -11,6 +11,5 @@ const outputParagraph: HTMLParagraphElement = document.querySelector("#output-co
 submitButton.addEventListener('click', event => {
   event.preventDefault()
   const encryptedText = robberLangConverter.convertTo(inputText.value)
-  console.log(encryptedText)
   outputParagraph.textContent = encryptedText
 })
